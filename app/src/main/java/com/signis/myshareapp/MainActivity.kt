@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         btnShowToast.setOnClickListener {
             //Code
             Log.i("MainActivity","Button was clicked!")
-            Toast.makeText(this ,"Button was clicked!",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this ,"Button was clicked!",Toast.LENGTH_LONG).show()
         }
     }
 }
