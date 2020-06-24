@@ -16,7 +16,7 @@ class SecondActivity : AppCompatActivity() {
         val msg = bundle!!.getString("user_message")
 
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
-        //push to textView
+        //push to textView ok
         tvUserMessage.text = msg
 
     }
