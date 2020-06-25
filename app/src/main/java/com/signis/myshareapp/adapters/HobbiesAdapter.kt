@@ -1,4 +1,4 @@
-package com.signis.myshareapp
+package com.signis.myshareapp.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
+import com.signis.myshareapp.models.Hobby
+import com.signis.myshareapp.R
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder> () {
+class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder> () {
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var currentHobby: Hobby? = null
         var currentPosition: Int = 0
@@ -36,9 +36,7 @@ class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerV
 
             this.currentHobby = hobby
             this.currentPosition = pos
-
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
