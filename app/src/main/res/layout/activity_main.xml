@@ -45,4 +45,14 @@
         android:layout_centerInParent="true"
         android:text="Share to Other Apps" />
 
+    <Button
+        android:id="@+id/btnRecyclerViewDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="181dp"
+        android:text="Recycler View Demo" />
+
 </RelativeLayout>
