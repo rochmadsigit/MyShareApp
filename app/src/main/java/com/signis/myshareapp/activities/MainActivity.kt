@@ -17,9 +17,7 @@ class MainActivity : AppCompatActivity() {
         btnShowToast.setOnClickListener {
             //Code
             Log.i("MainActivity","Button was clicked!")
-            showToast("Button was clicked!", Toast.LENGTH_LONG)
-            //Toast.makeText(this ,"Button was clicked!",Toast.LENGTH_SHORT).show()
-
+            showToast("Button was clicked!")
         }
 
         btnSendMsgToNextActivity.setOnClickListener {
@@ -30,7 +28,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("user_message", message)
             startActivity(intent)
-
         }
 
         btnShareToOtherApps.setOnClickListener {
@@ -41,13 +38,11 @@ class MainActivity : AppCompatActivity() {
             intent.type = "text/plain"
 
             startActivity(Intent.createChooser(intent,"Please select App: "))
-
         }
 
         btnRecyclerViewDemo.setOnClickListener {
             val intent = Intent(this, HobbiesActivity::class.java)
             startActivity(intent)
-
         }
     }
 }

@@ -13,11 +13,11 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         val bundle: Bundle? = intent.extras
-        val msg = bundle!!.getString("user_message")
-
-        showToast(msg)
-
-        //push to textView ok
-        tvUserMessage.text = msg
+        bundle?.let {
+            val msg = bundle.getString("user_message")
+            msg?.let { showToast(msg) }
+            //push to textView ok
+            tvUserMessage.text = msg
+        }
     }
 }
