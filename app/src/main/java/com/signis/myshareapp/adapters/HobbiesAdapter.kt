@@ -36,7 +36,7 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
                         intent.putExtra(Intent.EXTRA_TEXT, message)
                         intent.type = "text/plain"
 
-                        context.startActivity(Intent.createChooser(intent,"Please select App: "))
+                        context.startActivity(Intent.createChooser(intent,context.resources.getString(R.string.msg_btn_share_to_apps)))
                     }
             }
         }

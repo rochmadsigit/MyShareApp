@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikasi Share Ku</string>
+
+    <string name="btn_show_toast">Tampilkan Pesan</string>
+    <string name="et_user_message">Masukkan Pesan Anda</string>
+    <string name="btn_send_data_to_next_act">Kirim Data ke Aktivitas Berikutnya</string>
+    <string name="btn_share_to_other_apps">Bagikan ke Aplikasi lain</string>
+    <string name="btn_show_hobbies">Tampilkan Hobi</string>
+    <string name="tv_user_message">Tampilkan Teks</string>
+    <string name="tvx_Title">Judul</string>
+    <string name="msg_btn_was_clicked">Tombol telah ditekan!</string>
+    <string name="msg_btn_share_to_apps">Bagikan ke:</string>
+    <string name="lst_hobby_1">Berenang</string>
+    <string name="lst_hobby_2">Membaca</string>
+    <string name="lst_hobby_3">Jalan - Jalan</string>
+    <string name="lst_hobby_4">Tidur</string>
+    <string name="lst_hobby_5">Bermain game</string>
+    <string name="lst_hobby_6">Programming</string>
+    <string name="lst_hobby_7">Berbicara</string>
+</resources>

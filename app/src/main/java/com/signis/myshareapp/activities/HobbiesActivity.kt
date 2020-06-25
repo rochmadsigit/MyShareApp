@@ -29,6 +29,7 @@ class HobbiesActivity : AppCompatActivity(){
         val adapter = HobbiesAdapter(
             this,
             Supplier.hobbies
+
         )
         rvHobbies.adapter = adapter
     }

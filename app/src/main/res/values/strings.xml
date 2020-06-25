@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">MyShareApp</string>
+    <string name="app_name">My Share Application</string>
+
+    <string name="btn_show_toast">Show Toast</string>
+    <string name="et_user_message">Enter Your Message</string>
+    <string name="btn_send_data_to_next_act">Send Data To Next Activity</string>
+    <string name="btn_share_to_other_apps">Share to Other Apps</string>
+    <string name="btn_show_hobbies">Show Hobbies</string>
+    <string name="tv_user_message">Text View</string>
+    <string name="tvx_Title">Title</string>
+    <string name="msg_btn_was_clicked">Button was clicked!</string>
+    <string name="msg_btn_share_to_apps">Please select apps:</string>
+    <string name="lst_hobby_1">Swimming</string>
+    <string name="lst_hobby_2">Reading</string>
+    <string name="lst_hobby_3">Walking</string>
+    <string name="lst_hobby_4">Sleeping</string>
+    <string name="lst_hobby_5">Gaming</string>
+    <string name="lst_hobby_6">Programming</string>
+    <string name="lst_hobby_7">Talking</string>
+
 </resources>
