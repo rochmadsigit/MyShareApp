@@ -5,18 +5,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.signis.myshareapp.Contants
 import com.signis.myshareapp.R
 import com.signis.myshareapp.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        val TAG: String = MainActivity::class.java.simpleName
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         btnShowToast.setOnClickListener {
             //Code
-            Log.i("MainActivity","Button was clicked!")
+            Log.i(TAG,"Button was clicked!")
             showToast("Button was clicked!")
         }
 
@@ -26,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
             //explicit intent
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("user_message", message)
+            intent.putExtra(Contants.USER_MSG_KEY, message)
             startActivity(intent)
         }
 
